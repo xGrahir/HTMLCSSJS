@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index4.css' %}">
+    <script src="https://kit.fontawesome.com/53e1ad4806.js" crossorigin="anonymous"></script>
+    <title>{% block title %} {% endblock %}</title>
+    {% block static %} {% endblock %}
+</head>
+{% block content %}
+<body>
+    
+    <div class="box">
+        <a href="" class="link one">Link 1</a>
+        <a href="" class="link two">Link 2</a>
+        <a href="" class="link three">Link 3</a>
+        <a href="" class="link four">Link 4</a>
+        <a href="" class="link five">Link 5</a>
+    </div>
+
+</body>
+{% endblock %}
+</html>
