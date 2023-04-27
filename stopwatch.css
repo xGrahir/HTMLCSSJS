@@ -188,7 +188,7 @@ body {
   width: 100%;
   color: var(--main-orange);
   background-color: rgba(0, 0, 0, 0.9);
-  font-size: 2.7rem;
+  font-size: 2rem;
   text-align: center;
   opacity: 0;
   transition: opacity 0.5s;
@@ -238,5 +238,8 @@ body {
 @media (min-width: 768px) {
   .rear-buttons {
     display: block;
+  }
+  .help {
+    font-size: 2.8rem;
   }
 }/*# sourceMappingURL=stopwatch.css.map */
