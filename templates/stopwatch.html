@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+
+		<script src="https://kit.fontawesome.com/53e1ad4806.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="../static/css/stopwatch.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="icons">
+				<p class="icons-btn voice-off"><i class="fa-solid fa-volume-xmark"></i></p>
+				<p class="icons-btn voice-on"><i class="fa-solid fa-volume-low"></i></p>
+				<p class="icons-btn brush"><i class="fa-solid fa-paintbrush"></i></p>
+				<p class="icons-btn helpBtn"><i class="fa-solid fa-question"></i></p>
+			</div>
+			<div class="colors">
+				<button class="colors-btn green"></button>
+				<button class="colors-btn orange"></button>
+				<button class="colors-btn blue"></button>
+				<input class="colors-btn chose" type="color" value="#ff4d00">
+			</div>
+			<div class="main">
+				<h1>Stoper</h1>
+				<div class="time">00:00:00</div>
+				<p class="last-time"></p>
+			</div>
+			<div class="buttons">
+				<div class="rear-buttons">
+					<button class="play btn"><i class="fa-solid fa-play"></i></button>
+					<button class="stop btn"><i class="fa-solid fa-pause"></i></button>
+					<button class="reset btn"><i class="fa-solid fa-stop"></i></button>
+					<button class="xbtn btn"><i class="fa-solid fa-x"></i></button>
+				</div>
+				<button class="archive btn">Archiwum</button>
+			</div>
+			<div class="help">
+				<h2>Instrukcja:</h2>
+				<div class="help-informations">
+					<p><i class="fa-solid fa-play"></i> - Rozpoczyna pomiar</p>
+					<p><i class="fa-solid fa-pause"></i> - Pauzuje pomiar</p>
+					<p><i class="fa-solid fa-stop"></i> - Stopuje pomiar, resetuje licznik, dodaje wynik do archiwum</p>
+					<p><i class="fa-solid fa-x"></i> - Resetuje ostatni pomiar i archiwum</p>
+					<p><i class="fa-solid fa-paintbrush"></i> - Zmiana koloru interfejsu</p>
+				</div>
+			</div>
+			<div class="saved-times">
+				<p>Nie masz żadnych zapisanych czasów</p>
+			</div>
+		</div>
+
+		<script src="../static/js/stopwatch.js"></script>
+	</body>
+</html>
